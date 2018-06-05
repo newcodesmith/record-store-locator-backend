@@ -1,4 +1,4 @@
-const comments = require('../comments-seed-data');
+const comments = require('../seed_data_files/comments-seed-data');
 
 exports.seed = function (knex, Promise) {
   // Deletes ALL existing entries

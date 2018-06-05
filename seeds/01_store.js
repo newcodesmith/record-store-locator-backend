@@ -1,4 +1,4 @@
-const stores = require('../stores-seed-data');
+const stores = require('../seed_data_files/stores-seed-data');
 
 exports.seed = function (knex, Promise) {
   // Deletes ALL existing entries

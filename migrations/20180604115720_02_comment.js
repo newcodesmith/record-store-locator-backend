@@ -1,4 +1,4 @@
-  exports.up = function(knex, Promise) {
+exports.up = function(knex, Promise) {
     return knex.schema.createTable('comment', (table) => {
       table.increments('comment_id');
       table.integer('comment_store_id').references('store.store_id').unsigned();

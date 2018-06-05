@@ -3,7 +3,7 @@ const knex = require('./knex'); // the connection
 module.exports = {
     getAll() {
         return knex.from('comment')
-            .innerJoin('store', 'comment.comment_store_id', 'store.store_id')
+            .innerJoin('store', 'comment.comment_store_id', 'store.store_id');
     },
 
     getOne(id) {
