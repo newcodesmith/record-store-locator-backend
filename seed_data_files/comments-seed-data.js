@@ -26,5 +26,12 @@ module.exports = [
         "user_pic": {},
         "comment": "Very modern and clean looking store. Nice small selection.",
         "rating": 4
+    },
+    { 
+        "comment_store_id": 4,
+        "user_name": "John Williams",
+        "user_pic": {},
+        "comment": "Is an OK store. Not much to choose from.",
+        "rating": 3
     }
 ]
