@@ -2,8 +2,8 @@ module.exports = [
     { 
         "name": "Twist & Shout Records",
         "address": "2508 E Colfax Ave, Denver, CO 80206",
-        "latitude": "39.740188",
-        "longitude": "-104.956992",
+        "latitude": 39.740188,
+        "longitude": -104.956992,
         "hours": "Mon-Sat 10-21 | Sun 10-18",
         "web_address": "https://www.twistandshout.com/",
         "facebook": "https://www.facebook.com/TwistandShoutDenver/",
@@ -14,8 +14,8 @@ module.exports = [
     { 
         "name": "Wax Trax Records",
         "address": "620 E 13th Ave, Denver, CO 80203",
-        "latitude": "39.736965",
-        "longitude": "-104.978906",
+        "latitude": 39.736965,
+        "longitude": -104.978906,
         "hours": "Mon-Thu 10-19 | Fri-Sat 10-20 | Sun 11-18",
         "web_address": "http://www.waxtraxrecords.com/",
         "facebook": "https://www.facebook.com/Wax-Trax-Records-192564244298/",
@@ -26,8 +26,8 @@ module.exports = [
     { 
         "name": "Angelo's CDs & More",
         "address": "937 E Colfax Ave, Denver, CO 80218",
-        "latitude": "39.740255",
-        "longitude": "-104.975018",
+        "latitude": 39.740255,
+        "longitude": -104.975018,
         "hours": "Mon-Thu 10-22 | Fri-Sat 10-23 | Sun 11-20",
         "web_address": "http://www.angeloscds.com/",
         "facebook": "https://www.facebook.com/AngelosCDsandMore/",
@@ -38,8 +38,8 @@ module.exports = [
     { 
         "name": "Recollect Records",
         "address": "1255 Delaware St, Denver, CO 80204",
-        "latitude": "39.736297",
-        "longitude": "-104.993243",
+        "latitude": 39.736297,
+        "longitude": -104.993243,
         "hours": "ue-Thu 11-18 | Fri-Sat 11-19 | Sun 11-18",
         "web_address": "http://www.recollectrecords.com/",
         "facebook": "https://www.facebook.com/Recollect-Records-244288892586252/",
