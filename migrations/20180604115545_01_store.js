@@ -3,8 +3,8 @@ exports.up = function(knex, Promise) {
       table.increments('store_id');
       table.text('name').notNullable();
       table.text('address').notNullable();
-      table.decimal('latitude', 5, 10);
-      table.decimal('longitude', 5, 10);
+      table.decimal('latitude', null);
+      table.decimal('longitude', null);
       table.text('hours');
       table.text('web_address');
       table.text('facebook');
