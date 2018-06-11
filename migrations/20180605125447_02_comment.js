@@ -3,7 +3,7 @@ exports.up = function(knex, Promise) {
       table.increments('comment_id');
       table.integer('comment_store_id').references('store.store_id').unsigned();
       table.text('user_name');
-      table.specificType('user_pic', 'TEXT[]')
+      table.text('user_pic')
       table.text('comment');
       table.integer('rating');
     });
