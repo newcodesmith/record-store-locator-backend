@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
       table.integer('comment_store_id').references('store.store_id').unsigned();
       table.text('user_name');
       table.text('user_pic');
-      table.timestamp('dateCreated').notNullable().defaultTo(new Date);
+      table.text('dateCreated').notNullable().defaultTo(new Date().toISOString());
       table.text('comment');
       table.integer('rating');
     });
