@@ -6,11 +6,11 @@ exports.up = function(knex, Promise) {
       table.text('latitude');
       table.text('longitude');
       table.text('hours');
+      table.text('phone');
       table.text('web_address');
       table.text('facebook');
       table.text('description');
       table.text('photo');
-      table.integer('average_rating');
     });
   };
   

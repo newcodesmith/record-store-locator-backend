@@ -5,11 +5,11 @@ module.exports = [
         "latitude": "39.740188",
         "longitude": "-104.956992",
         "hours": "Mon-Sat 10-21 | Sun 10-18",
+        "phone": "(303) 722-1943",
         "web_address": "https://www.twistandshout.com/",
         "facebook": "https://www.facebook.com/TwistandShoutDenver/",
-        "description": "New and used records, CD, and movies",
+        "description": "Old-school shop for buying & selling new & used vinyl, CDs, DVDs & more, with occasional live music.",
         "photo": "https://i.ytimg.com/vi/S6mfmkvhw0g/maxresdefault.jpg",
-        "average_rating": 5
     },
     { 
         "name": "Wax Trax Records",
@@ -17,11 +17,11 @@ module.exports = [
         "latitude": "39.736965",
         "longitude": "-104.978906",
         "hours": "Mon-Thu 10-19 | Fri-Sat 10-20 | Sun 11-18",
+        "phone": "(303) 860-0127",
         "web_address": "http://www.waxtraxrecords.com/",
         "facebook": "https://www.facebook.com/Wax-Trax-Records-192564244298/",
-        "description": "New and used records",
+        "description": "Wax Trax is a bricks & mortar store that has been at this location for over 39 years. We sell all manner of new and used vinyl; as well as new & used CDs, cassette tapes, t-shirts, buttons, stickers & patches.",
         "photo": "http://www.waxtraxrecords.com/wt-pic-1.jpg",
-        "average_rating": 4
     },
     { 
         "name": "Angelo's CDs & More",
@@ -29,11 +29,11 @@ module.exports = [
         "latitude": "39.740255",
         "longitude": "-104.975018",
         "hours": "Mon-Thu 10-22 | Fri-Sat 10-23 | Sun 11-20",
+        "phone": "(303) 863-8668",
         "web_address": "http://www.angeloscds.com/",
         "facebook": "https://www.facebook.com/AngelosCDsandMore/",
         "description": "Independent Record Store that has been open for nearly 30 years! Specializing in music, vinyl, movies, smoking accessories, fashion, body jewelry, knives, skate shop & more!",
         "photo": "http://www.angeloscds.com/Gifts%20Main/Gifts%20Images%20Main/2016_7%20Colfax%20Vinyl%202.png",
-        "average_rating": 3
     },
     { 
         "name": "Recollect Records",
@@ -41,10 +41,10 @@ module.exports = [
         "latitude": "39.736297",
         "longitude": "-104.993243",
         "hours": "Tue-Thu 11-18 | Fri-Sat 11-19 | Sun 11-18",
+        "phone": "(720) 542-8785",
         "web_address": "http://www.recollectrecords.com/",
         "facebook": "https://www.facebook.com/Recollect-Records-244288892586252/",
-        "description": "New and used records",
+        "description": "Nothing compares to that feeling of digging up a record you've spent years looking for — except of course that other feeling of discovering a new song, album or artist you can't believe you ever lived without. Get in touch with both of those feelings at Recollect Records.",
         "photo": "https://static1.squarespace.com/static/578a841337c58163285f6fd3/578a8bac440243996942e8bb/57c275802e69cfce278584e0/1478106767450/Record_Store-1.jpg?format=1500w",
-        "average_rating": 4
     }
 ]
