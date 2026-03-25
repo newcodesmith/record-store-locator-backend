@@ -21,7 +21,31 @@ https://github.com/newcodesmith/record-store-locator-frontend
 https://github.com/newcodesmith/record-store-locator-backend
 
 ## Installation
-To run, npm install expo-cli --global, dowload the Expo app on your mobile device. Run both clients and scan bar code.
+
+1. Install dependencies:
+
+	npm install
+
+2. Make sure PostgreSQL is running and create the local database:
+
+	createdb record-store-locator
+
+3. Run migrations + seeds and start the API:
+
+	npm run dev:setup
+
+4. For normal daily development (after setup):
+
+	npm run dev
+
+## Useful scripts
+
+- `npm run db:migrate` - run latest migrations
+- `npm run db:seed` - seed database
+- `npm run db:setup` - migrate + seed
+- `npm run db:reset` - rollback all migrations, then migrate + seed
+- `npm run dev` - run server with nodemon
+- `npm run dev:setup` - db setup + run server
 
 ## License
 2018 NEWCODESMITH

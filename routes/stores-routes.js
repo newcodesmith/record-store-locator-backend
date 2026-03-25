@@ -3,52 +3,39 @@ const express = require('express');
 const router = express.Router();
 
 const queries = require('../db/stores-queries');
+const { isValidId } = require('../middleware/validate');
 
-function isValidId(req, res, next) {
-    if (!isNaN(req.params.id))
-        return next();
-    next(new Error('Invalid ID'));
-}
-
-router.get('/', (req, res) => {
+router.get('/', (req, res, next) => {
     queries.getAll()
-        .then(stores => {
-            res.json(stores);
-        });
+        .then(stores => res.json(stores))
+        .catch(next);
 });
 
 router.get('/:id', isValidId, (req, res, next) => {
     queries.getOne(req.params.id)
         .then(store => {
-            if (store) {
-                res.json(store);
-            } else {
-                next();
-            }
-        });
+            if (store) res.json(store);
+            else next();
+        })
+        .catch(next);
 });
 
 router.post('/', (req, res, next) => {
     queries.create(req.body)
-        .then(stores => {
-            res.status(201).json(stores[0]);
-        });
+        .then(stores => res.status(201).json(stores[0]))
+        .catch(next);
 });
 
 router.put('/:id', isValidId, (req, res, next) => {
     queries.update(req.params.id, req.body)
-        .then(stores => {
-            res.status(201).json(stores[0]);
-        });
+        .then(stores => res.json(stores[0]))
+        .catch(next);
 });
 
-router.delete('/:id', isValidId, (req, res) => {
+router.delete('/:id', isValidId, (req, res, next) => {
     queries.delete(req.params.id)
-        .then(() => {
-            res.json({
-                delete: true
-            });
-        });
+        .then(() => res.status(204).end())
+        .catch(next);
 });
 
 module.exports = router;

@@ -2,11 +2,11 @@ const knex = require('./knex'); // the connection
 
 module.exports = {
     getAll() {
-        return knex.from('comment')
+        return knex('comment');
     },
 
     getOne(id) {
-        return knex.from('comment')
+        return knex('comment')
             .where('comment_id', id)
             .first();
     },

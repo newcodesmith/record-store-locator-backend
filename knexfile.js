@@ -1,9 +1,9 @@
-// Update with your config settings.
+require('dotenv').config();
 
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/record-store-locator'
+    connection: process.env.DATABASE_URL || 'postgres://localhost/record-store-locator'
   },
   production: {
     client: 'pg',

@@ -1,10 +1,7 @@
 const createError = require('http-errors');
 const express = require('express');
-const path = require('path');
-const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-// const requireHttps = require('require-https');
-var cors = require('cors');
+const cors = require('cors');
 
 const app = express();
 
@@ -14,10 +11,10 @@ const comments = require('./routes/comments-routes');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.enable('trust proxy');
-// app.use(requireHttps());
 app.use(cors());
+
+app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
 app.use('/stores', stores);
 app.use('/comments', comments);
